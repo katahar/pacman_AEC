@@ -1,0 +1,6 @@
+[submodule "PacMan/MMLPlayer"]
+	path = PacMan/MMLPlayer
+	url = https://github.com/captainys/MMLPlayer.git
+[submodule "PacMan/public"]
+	path = PacMan/public
+	url = https://github.com/captainys/public.git
