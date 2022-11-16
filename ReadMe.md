@@ -5,18 +5,19 @@
    The main executable is called animationWithMapVelocity.cpp but can be built by using the target name "PacMan" and the executable will be built as "PacMan.exe". \
    The folders containing the sprites, maps, and sound clips, along with the highscores file are placed in the data folder. We've added post build so that the game can run from the build directory, without worrying about the relative path from the build to the data folder.
 
-   We've also added Public and MMLPlayer git repositories as submodules for this project repository to make the path standard for all systems. Thus, these submodules have to be initialized and updated before building the game. 
-   To do that run the following commands from inside the Strange_Team_Name_Here folder.
+   This project depends on public and MMLPlayer repositories which are publicly available on github. as submodules for this project repository to make the path standard for all systems. Run the following commands in pacman_AEC directory:
    
-   ```
-   git submodule init
-   git submodule update
-   ```
+   ``
+   git clone https://github.com/captainys/public.git
+   git clone https://github.com/captainys/MMLPlayer.git
+   ``
 
-   Then run the following commands from inside the build directory to build and run the game.
+   Then run the following commands from inside the same directory to build and run the game.
 
    ```
-   cmake < Relative path to Strange_Team_Name_Here/PacMan >
+   mkdir build
+   cd build
+   cmake ..\PacMan\
    cmake --build . --target PacMan --config Release
    .\Release\PacMan.exe
    ```
