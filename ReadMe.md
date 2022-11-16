@@ -7,10 +7,10 @@
 
    This project depends on public and MMLPlayer repositories which are publicly available on github. as submodules for this project repository to make the path standard for all systems. Run the following commands in pacman_AEC directory:
    
-   ``
+   ```
    git clone https://github.com/captainys/public.git
    git clone https://github.com/captainys/MMLPlayer.git
-   ``
+   ```
 
    Then run the following commands from inside the same directory to build and run the game.
 
